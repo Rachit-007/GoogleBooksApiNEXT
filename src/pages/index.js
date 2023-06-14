@@ -20,7 +20,7 @@ export default function Home(props) {
             <Filter />
           </div>
           <div className="flex flex-wrap max-w-6xl mx-auto justify-center">
-            {books.map((book) => (
+            {props.books.map((book) => (
               <BookList
                 books={book.volumeInfo}
                 saleInfo={book.saleInfo}

@@ -17,6 +17,7 @@
     "@mui/material": "^5.13.5",
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
+    "graphql": "^16.6.0",
     "lodash": "^4.17.21",
     "mongoose": "^7.2.3",
     "next": "13.4.5",
