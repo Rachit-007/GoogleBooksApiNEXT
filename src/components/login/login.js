@@ -95,7 +95,7 @@ export const Login = () => {
             <span className="ml-4">Login with Google</span>
           </button>
           <div className="text-sm flex justify-between items-center mt-3">
-            <p>If you don't have an account...</p>
+            <p>If you dont have an account...</p>
             <Link href="/signup">
               <button className="py-2 px-5 ml-3 bg-white border rounded-xl hover:bg-blue-400 hover:text-white duration-300 border-blue-400">
                 Register
