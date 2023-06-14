@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Loader } from "../../components/loader/loader";
 import { Login } from "../../components/login/login";
 
-const login = () => {
+const LoginPage = () => {
   const router = useRouter();
   const { data: session, status } = useSession();
 
@@ -24,8 +24,8 @@ const login = () => {
   }
 };
 
-export default login;
+export default LoginPage;
 
-login.getLayout = function PageLayout(page) {
+LoginPage.getLayout = function PageLayout(page) {
   return page;
 };

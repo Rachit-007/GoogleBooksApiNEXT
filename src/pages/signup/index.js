@@ -4,7 +4,7 @@ import React from "react";
 import { Loader } from "../../components/loader/loader";
 import { Signup } from "../../components/signup/signup";
 
-const signup = () => {
+const SignupPage = () => {
   const router = useRouter();
   const { data: session, status } = useSession();
 
@@ -25,8 +25,8 @@ const signup = () => {
   }
 };
 
-export default signup;
+export default SignupPage;
 
-signup.getLayout = function PageLayout(page) {
+SignupPage.getLayout = function PageLayout(page) {
   return page;
 };
