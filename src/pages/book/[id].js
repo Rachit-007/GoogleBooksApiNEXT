@@ -21,17 +21,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   let id = context.params.id;
 
-  const session = await getSession(context);
-
-  if (!session) {
-    return {
-      redirect: {
-        destination: "/login",
-        permanent: true,
-      },
-    };
-  }
-
   try {
     let { data } = await client.query({
       query: GET_SINGLE_BOOK,
