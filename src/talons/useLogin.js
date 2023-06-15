@@ -37,7 +37,6 @@ export const useLogin = () => {
         redirect: false,
       });
       router.push("/");
-      toast.success("Login Successfully !!!");
     } catch (err) {
       toast.error("Unable To Login!!!");
     }
