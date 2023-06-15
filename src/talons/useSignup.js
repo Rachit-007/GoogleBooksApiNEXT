@@ -34,7 +34,6 @@ export const useSignup = () => {
         redirect: false,
       });
       router.push("/");
-      toast.success("Login Successfully !!!");
     } catch (err) {
       console.log(err);
       toast.error("Unable To Singup!!!");
